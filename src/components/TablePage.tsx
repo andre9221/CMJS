@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { DynamicForm } from "./DynamicForm";
-import { DataTable } from "./DataTable";
+import { SearchPanel } from "./SearchPanel";
 import { SqlPanel } from "./SqlPanel";
 import { fetchAll, insertRow, deleteRow } from "@/lib/supabase-helpers";
 import type { TableDef } from "@/lib/supabase-helpers";
@@ -53,10 +53,6 @@ export function TablePage({ tableDef }: TablePageProps) {
     }
   };
 
-  const columns = data.length > 0
-    ? Object.keys(data[0])
-    : [tableDef.idColumn, ...tableDef.fields.map(f => f.name)];
-
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -88,12 +84,10 @@ export function TablePage({ tableDef }: TablePageProps) {
         loading={loading}
       />
 
-      <DataTable
-        data={data}
-        columns={columns}
-        idColumn={tableDef.idColumn}
+      <SearchPanel
+        tableDef={tableDef}
+        allData={data}
         onDelete={handleDelete}
-        title={`${tableDef.label} Records`}
       />
     </div>
   );

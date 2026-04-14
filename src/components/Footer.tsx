@@ -14,7 +14,7 @@ export function Footer() {
               <span className="font-bold text-xl tracking-tight text-white">CJMS</span>
             </div>
             <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">
-              Unified Crime & Judiciary Management System. 
+              Unified Crime & Judiciary Management System.
               Advanced forensics, case tracking, and procedural automation for a modern justice system.
             </p>
           </div>
@@ -41,8 +41,8 @@ export function Footer() {
               Connect
             </h3>
             <div className="flex flex-col gap-3">
-              <a 
-                href="mailto:andrea.a2024@vitstudent.ac.in" 
+              <a
+                href="mailto:andrea.a2024@vitstudent.ac.in"
                 className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors text-sm group"
               >
                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-indigo-500/20 group-hover:text-indigo-400 transition-all">
@@ -50,16 +50,17 @@ export function Footer() {
                 </div>
                 andrea.a2024@vitstudent.ac.in
               </a>
-              <a 
-                href="https://github.com/and9221" 
-                target="_blank" 
+              <a
+                href="https://github.com/and9221"
+                target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 text-zinc-400 hover:text-white transition-colors text-sm group"
               >
                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-zinc-800 transition-all">
                   <Github className="w-4 h-4" />
                 </div>
-                Github: and9221
+                Github: and9221 , Mrinalini10
+
               </a>
             </div>
           </div>
